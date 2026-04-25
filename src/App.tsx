@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 import { io, Socket } from 'socket.io-client';
 import { GameView } from './components/GameView';
-import { Palette, Play } from 'lucide-react';
+import { Palette } from 'lucide-react';
 
-const SERVER_URL = 'http://localhost:3001';
+const SERVER_URL = 'https://scribble-io-new.onrender.com';
 
 function App() {
   const [socket, setSocket] = useState<Socket | null>(null);
